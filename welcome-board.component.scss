@@ -1,0 +1,71 @@
+@import "../../../../assets/scss/partials/colors.partial";
+@import "../../../../assets/scss/partials/typography.partial";
+@import "../../../../assets/scss/elements";
+@import "../../../../assets/scss/partials/variables";
+@import "../../../../assets/scss/_checkbox";
+.welcome-board-content {
+    text-align: left;
+    .welcome-board-description-wrapper {
+        margin-bottom: 80px;
+        padding-right: 10em;
+        .heading {
+            font-size: 26px;
+            color: #030303;
+            @include proxima-nova-bold;
+            margin-bottom: 30px;
+        }
+    }
+    .description {
+        font-size: 16px;
+        @include proxima-nova-regular;
+        color: $cl-grey-600;
+    }
+    .add-organization-wrapper {
+        .title {
+            font-size: 24px;
+            color: $cl-primary;
+            margin-bottom: 20px;
+            @include proxima-nova-semibold;
+        }
+        .description {
+            margin-bottom: 60px;
+        }
+    }
+    .account-wrapper {
+        @include flexbox-display();
+        @include flexbox-vertical-center();
+        @include flexbox-justify-start();
+        .account-details {
+            width: 800px;
+            @include flexbox-display();
+            @include flexbox-vertical-center();
+            @include flexbox-justify-start();
+            border: $border;
+            padding: 14px;
+            // width: 100%;
+            border-radius: 4px;
+            margin-right: 1rem;
+            .account-avata {}
+            .account-name {
+                padding: 0 12px;
+                border-right: $border;
+                color: $cl-primary;
+                border-right-color: $cl-primary;
+                @include proxima-nova-bold;
+                font-size: 14px;
+                margin-right: 12px;
+            }
+            .account-type {
+                @include proxima-nova-bold;
+                font-size: 12px;
+                color: $cl-grey-400;
+            }
+        }
+        .account-list {
+            margin-right: 1rem;
+        }
+        .account-add {
+            width: 100%;
+        }
+    }
+}

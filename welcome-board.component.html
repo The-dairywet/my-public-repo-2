@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="card card-container align-middle align-items-center py-5 w-100">
+        <div class="row w-100 text-center">
+            <div class="col-sm-5">
+                <div class="card-body w-100">
+                    <div>
+                        <img src="/assets/integrate repo.svg" class="mb-4" height="300px">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7 integrate-repo-container">
+                <div class="card-body">
+                    <div class="welcome-board-content">
+                        <div class="welcome-board-description-wrapper">
+                            <h5 class="heading">Welcome aboard!</h5>
+                            <!-- <p>Hey {{this.userName}}, thanks..</p> -->
+                            <p class="description">Hey {{this.userName}}, thanks for signing up today with Embold. We’re glad you are here.Curious to know about Embold repositories? Head on over to linking repositories with Embold.</p>
+                        </div>
+                        <div class="add-organization-wrapper">
+                            <h5 class="title">Add an organisation to get started</h5>
+                            <!-- <p>Hey {{this.userName}}, thanks..</p> -->
+                            <p class="description">Set up a new organisation in Embold and connect to one or different user accounts.</p>
+                            <div class="account-wrapper">
+                                <div class="account-details">
+                                    <div class="account-avatar mr-1">
+                                        <!-- <img src="{{ this.avatar }}" class="avatar rounded-circle"> -->
+                                        <img src="https://avatars3.githubusercontent.com/u/33981606?u=5a7c386eee64e2cf8cb6e7c986bb14ec787f8af5&v=4" width="25" height="25" class="avatar rounded-circle">
+                                    </div>
+                                    <div class="account-name">
+                                        Shahaji patil
+                                    </div>
+                                    <div class="account-type">
+                                        Github account
+                                    </div>
+                                </div>
+                                <div class="account-list">
+                                    <app-inline-select [items]="organizationOptions" (select)="selectedOrganizations($event)" [selectedItem]="selectedItem">
+                                    </app-inline-select>
+                                </div>
+                                <div class="account-add">
+                                    <app-button [items]="addOrg" (onBtnClick)="onAddOrg($event)">
+                                    </app-button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="create-organization-wrapper"> -->
+                        <!-- <h5>Or create a custom organisation</h5>
+                            <p>Build a tailor-make organisation and set out to create new repositories if those don’t exist.
+                            </p> -->
+                        <!-- <button mat-button class="link-repo">
+                                <span class="bitbucket">Create organization</span>
+                            </button> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
